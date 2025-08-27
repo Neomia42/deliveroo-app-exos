@@ -22,7 +22,9 @@ const Cart = (props) => {
   return (
     <div className="cart-container">
       <div className="cart">
-        <button type="button">Valider mon panier</button>
+        <button className="valid-cart" type="button">
+          Valider mon panier
+        </button>
         {cartItems.length === 0 && <p>Votre panier est vide</p>}
         {cartItems.map((item) => (
           <div key={item.id} className="cart-item">
@@ -49,7 +51,7 @@ const Cart = (props) => {
             </div>
           </div>
         ))}
-        <div>
+        <div className="cart-total">
           <h3>Total panier : {totalPrice + " €"}</h3>
         </div>
       </div>
