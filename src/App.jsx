@@ -1,6 +1,6 @@
 // import components
 
-import DataRest from "./components/data/DataRest";
+import DataRest from "./components/DataRest/DataRest";
 
 // import css
 import "./App.css";

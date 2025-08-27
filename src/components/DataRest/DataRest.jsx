@@ -1,9 +1,10 @@
+import "./DataRest.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 // import RestoInfos from "../components/RestoInfos";
-import CategoriesMenu from "../CategoriesMenu";
+import CategoriesMenu from "../CategoriesMenu/CategoriesMenu";
 import { Audio } from "react-loader-spinner";
-import Header from "../Header";
+import Header from "../Header/Header";
 
 const DataRest = () => {
   const [data, setData] = useState({});
